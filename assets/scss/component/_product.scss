@@ -79,12 +79,64 @@
         flex: 1 1 auto;
 
         &:last-child {
-          background-color: $black;
-          color: $white;
+          background-color: $brand-color;
+          color: $black;
         }
 
         i {
           margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.products__container {
+  max-width: 100%;
+
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 2rem;
+
+  .product {
+    border: 3px solid rgba($c-primary, 0.2);
+    padding: 2rem;
+
+    &__name {
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      overflow: hidden;
+      min-height: 12rem;
+      -webkit-box-orient: vertical;
+
+      display: -webkit-box;
+      text-overflow: ellipsis;
+
+      -webkit-line-clamp: 4;
+    }
+
+    &__actions {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 1rem;
+
+      button {
+        padding: 1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        color: $white;
+
+        &.product__view {
+          background-color: $c-primary;
+          box-shadow: $box-shadow;
+        }
+        &.product__delete {
+          background-color: $c-danger;
+          box-shadow: $box-shadow;
         }
       }
     }

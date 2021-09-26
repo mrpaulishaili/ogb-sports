@@ -1,0 +1,82 @@
+.form-container {
+  font-size: 1.5rem;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: $c-success;
+    text-align: center;
+  }
+
+  .message {
+    margin: 1rem 0 1.5rem;
+    padding: 2rem;
+
+    color: $white;
+    text-align: center;
+
+    &.success-message {
+      background-color: $c-success;
+      box-shadow: $box-shadow;
+    }
+    &.remove-message {
+      background-color: $c-primary;
+      box-shadow: $box-shadow;
+    }
+    &.danger-message {
+      background-color: $c-danger;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+.form {
+  display: grid;
+  grid-gap: 2rem;
+  margin: 1rem 0;
+
+  width: 100%;
+
+  [for="product_name"],
+  [for="product_desc"] {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    grid-gap: 1rem;
+    background-color: rgba($c-light, 0.2);
+    font-weight: bold;
+
+    input,
+    textarea {
+      flex: 1 1 80%;
+      border: 3px solid $c-light;
+      padding: 1rem;
+      color: $c-dark;
+      width: 100%;
+
+      &:focus {
+        outline: 2px solid $c-dark;
+      }
+    }
+  }
+
+  [type="submit"] {
+    background-color: $c-success;
+    box-shadow: $box-shadow;
+    border: 3px solid transparent;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      border: 3px soild rgba($color: $c-dark, $alpha: 0.5);
+    }
+  }
+}

@@ -106,36 +106,78 @@
 
     <main class="main">
       <!-- ** -->
-
-      <!-- HERO -->
-
-      <div class="hero">
-        <div class="slides">
-          <div
-            class="slide"
-            style="background-image: url(./assets/images/complete-jersey.jpg)"
-          >
-            <div class="slide-text">
-              <h2>The Latest Jersey by Man United now in town</h2>
-              <a class="btn" href="./shop.html">Explore more</a>
-            </div>
-          </div>
-          <div class="controls">
-            <div class="control"></div>
-            <div class="control active"></div>
-            <div class="control"></div>
-          </div>
+      <div class="modal-container">
+        <div class="modal">
+          <button class="modal__btn">&times;</button>
+          <h2 class="modal__title">Title here...</h2>
+          <p class="modal__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, et
+            consectetur doloremque accusamus ex minima alias error sit suscipit
+            quidem magnam quis, facilis a deleniti ipsum delectus eligendi quas
+            blanditiis.
+          </p>
         </div>
       </div>
+      <!-- ** -->
 
-      <!-- HERO ends -->
+      <!-- FORM CONTAINER -->
+      <div class="form-container">
+        <h1>Products Manager</h1>
+        <h3>Create new Product</h3>
 
-      <section class="section brands-you-trust">
-        <h2 class="section-title">Brands you Trust</h2>
-        <p class="">
-          We have made a collection of brand we know you love and trust
-        </p>
-      </section>
+        <!-- ** -->
+
+        <!--  Display Message Status-->
+
+        <!-- Populates from JS Components *** -->
+
+        <!-- Display Message ends -->
+
+        <!-- ** -->
+
+        <!-- FORM -->
+
+        <form action="" class="form">
+          <!-- ** -->
+
+          <!-- Product name -->
+          <label for="product_name"
+            >Product name
+            <input type="text" id="pName" placeholder="Product name" />
+          </label>
+
+          <!-- ** -->
+
+          <!-- Product description -->
+
+          <label for="product_desc"
+            >Product Description
+            <textarea
+              type="text"
+              id="pDesc"
+              cols="30"
+              rows="10"
+              placeholder="Enter product description"
+            ></textarea>
+          </label>
+
+          <!-- ** -->
+
+          <!-- Form submit -->
+
+          <input type="submit" value="Submit" />
+        </form>
+
+        <!-- FORM ends -->
+      </div>
+
+      <!-- ** -->
+
+      <!-- PRODUCTS CONTAINER -->
+
+      <div class="products__container">
+        <!-- populates -->
+      </div>
     </main>
 
     <!-- MAIN ends -->
@@ -213,6 +255,7 @@
     <!-- JAVASCRIPT -->
 
     <script src="./assets/js/script.js" type="module"></script>
+    <script src="./assets/js/components/product.js"></script>
 
     <!-- JAVASCRIPT ends -->
   </body>
