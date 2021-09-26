@@ -1,0 +1,22 @@
+{
+  "name": "ogbsports",
+  "version": "2.0.0",
+  "description": "Qulaity sports jerseys, wears and kits",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sports",
+    "jersey",
+    "appheart",
+    "brand",
+    "nike",
+    "addidas"
+  ],
+  "author": "OGB Sports, Appheart",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

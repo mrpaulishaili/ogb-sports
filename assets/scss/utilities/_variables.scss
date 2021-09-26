@@ -1,0 +1,30 @@
+/* */
+/* ===== COLORS ===== */
+
+$black: hsl(0, 0%, 1%);
+
+$white: hsl(0, 0%, 95%);
+
+$brand-color: rgb(255, 215, 0);
+
+$brand-color_sec: #937358;
+
+/* */
+/* ===== BOX SHADOW ===== */
+$box-shadow: 0 0.5rem 1rem rgba($brand-color_sec, 0.1);
+$box-shadow__y-inverse: 0 -0.5rem 1rem rgba($brand-color_sec, 0.1);
+
+$box-shadow-light: 0 0.25rem 0.5rem lighten($brand-color_sec, 0.4);
+
+/* */
+/* ===== TRANSITION ===== */
+$transition__default: 0.3s linear;
+
+/* */
+/* ===== SCREEN SIZES ===== */
+
+$mobile-screen: 450px;
+
+$tablet-screen: 768px;
+
+$laptop-screen: 980px;

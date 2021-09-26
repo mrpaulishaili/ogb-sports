@@ -1,0 +1,93 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 10rem;
+
+  padding: 2rem;
+
+  box-shadow: $box-shadow;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+
+  @media (min-width: $tablet-screen) {
+    padding: 2rem 9%;
+  }
+
+  .brand {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Oswald";
+  }
+
+  .nav {
+    &-list {
+      display: flex;
+      gap: 2rem;
+
+      li {
+        padding: 1rem;
+
+        &.active {
+          background-color: $brand-color;
+          border-radius: 0.5rem;
+        }
+      }
+
+      i {
+        margin-right: 1rem;
+      }
+
+      a {
+        display: flex;
+        font-size: 1.5rem;
+        width: 100%;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+
+    // @media (max-width: 520px) {
+    //   position: absolute;
+    //   top: 99%;
+    //   right: 0;
+    //   padding: 2rem;
+    //   background-color: #fff;
+
+    //   transform: scale(0);
+    //   transform-origin: top right;
+
+    //   &.active {
+    //     transform: scale(1);
+    //   }
+
+    //   &-list {
+    //     flex-direction: column;
+    //   }
+    // }
+  }
+
+  .menu-toggle {
+    padding: 1.25rem 1.5rem;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+
+    // @media (min-width: 520px) {
+    //   display: none;
+    // }
+  }
+}
+
+.fa-times {
+  transform: rotate(-180deg);
+}

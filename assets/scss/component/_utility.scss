@@ -1,0 +1,22 @@
+.utility {
+  padding: 1.5rem;
+
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+
+  position: fixed;
+  top: 45%;
+  transform: translateY(-45%);
+
+  right: 0;
+
+  z-index: 100;
+
+  i {
+    font-size: 1.85rem;
+    opacity: 0.75;
+    margin-right: 1rem;
+  }
+}

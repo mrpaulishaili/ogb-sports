@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["dashboard"],{7277:function(n,a,e){"use strict";e.r(a);var r=e("7a23");function o(n,a,e,o,t,c){return Object(r["q"])(),Object(r["e"])("h2",null,"Dashboard")}var t={};t.render=o;a["default"]=t}}]);
-//# sourceMappingURL=dashboard.107b3926.js.map

@@ -1,0 +1,52 @@
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  transition: $transition__default;
+  user-select: none;
+
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 55%;
+  scroll-padding-top: 10rem;
+
+  @media (min-width: $tablet-screen) {
+    font-size: 67.5%;
+  }
+}
+
+body {
+  font-family: "Raleway";
+  color: $black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
