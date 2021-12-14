@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
+    <!-- FAVICON ends-->
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- FONTAWESOME ends-->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Spectral:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- CSS ends -->
+
+    <title>OGB Sports</title>
+  </head>
+
+  <!-- ** -->
+
+  <!-- GRID Container -->
+
+  <body class="grid-container">
+    <!-- ** -->
+
+    <!-- HEADER -->
+
+    <header><%-include('../components/store-header.ejs') %></header>
+
+    <!-- HEADER ends -->
+
+    <!-- ** -->
+
+    <!-- ASIDE  -->
+
+    <aside class="aside">
+        <%-include('../components/aside.ejs') %>
+    </aside>
+
+    <!-- ASIDE ends -->
+
+    <!-- ** -->
+
+    <!-- MAIN -->
+
+    <main class="main">
+      <!-- ** -->
+
+      <!-- HERO -->
+
+      <div class="hero">
+        <div class="slides">
+          <div
+            class="slide"
+            style="background-image: url(/images/complete-jersey.jpg)"
+          >
+            <div class="slide-text">
+              <h2>The Latest Jersey by Man United now in town</h2>
+              <a class="btn" href="/shop.html">Explore more</a>
+            </div>
+          </div>
+          <div class="controls">
+            <div class="control"></div>
+            <div class="control active"></div>
+            <div class="control"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO ends -->
+
+      <div class="products">
+        <div class="product">
+          <div class="product__back"></div>
+
+          <div class="product__front">
+            <img src="./assets/images/polo.jpg" alt="" class="product__image" />
+          </div>
+
+          <div class="product__actions">
+            <button class="btn">View details</button>
+            <button class="btn">
+              <i class="fa fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product__back"></div>
+
+          <div class="product__front">
+            <img
+              src="./assets/images/complete-jersey.jpg"
+              alt=""
+              class="product__image"
+            />
+          </div>
+
+          <div class="product__actions">
+            <button class="btn">View details</button>
+            <button class="btn">
+              <i class="fa fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product__back"></div>
+
+          <div class="product__front">
+            <img
+              src="./assets/images/sneakers.jpg"
+              alt=""
+              class="product__image"
+            />
+          </div>
+
+          <div class="product__actions">
+            <button class="btn">View details</button>
+            <button class="btn">
+              <i class="fa fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product__back"></div>
+
+          <div class="product__front">
+            <img
+              src="./assets/images/boxers.jpg"
+              alt=""
+              class="product__image"
+            />
+          </div>
+
+          <div class="product__actions">
+            <button class="btn">View details</button>
+            <button class="btn">
+              <i class="fa fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+      </div>
+    </main>
+
+    <!-- MAIN ends -->
+
+    <!-- ** -->
+
+    <!-- FOOTER -->
+
+    <footer id="reach-us"><%-include('../components/footer.ejs') %></footer>
+
+    <!-- FOOTER ends-->
+
+    <!-- ** -->
+
+    <!-- JAVASCRIPT -->
+
+    <script src="/js/script.js" type="module"></script>
+
+    <!-- JAVASCRIPT ends -->
+  </body>
+
+  <!-- GRID Container ends -->
+</html>

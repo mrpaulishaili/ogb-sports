@@ -1,0 +1,33 @@
+.checkout-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+
+  @media (min-width: 680px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+    &_image {
+      height: 300px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

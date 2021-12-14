@@ -69,6 +69,7 @@ html::-webkit-scrollbar-thumb {
 body {
   font-family: "Spectral";
   color: #030303;
+  background-color: #f5f3f3;
 }
 
 ul {
@@ -602,6 +603,52 @@ button {
           box-shadow: none;
 }
 
+.checkout-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 2rem;
+}
+
+@media (min-width: 680px) {
+  .checkout-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.checkout-container .product-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.checkout-container .product-cart h1 {
+  font-size: 2rem;
+}
+
+.checkout-container .product-cart_image {
+  height: 300px;
+}
+
+.checkout-container .product-cart_image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* */
 /* ===== IMPORT LAYOUTS ===== */
 /* */
@@ -625,7 +672,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
+  background-color: #411919;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -771,6 +819,11 @@ button {
 
 /* */
 /* ===== FOOTER ===== */
+footer {
+  background-color: #411919;
+  color: #fff;
+}
+
 .footer {
   -webkit-box-shadow: 0 -0.5rem 1rem rgba(147, 115, 88, 0.1);
           box-shadow: 0 -0.5rem 1rem rgba(147, 115, 88, 0.1);
@@ -837,6 +890,6 @@ button {
   text-align: center;
   padding: 2rem;
   font-size: 1.35rem;
-  background-color: #f2f2f2;
+  border-top: 1px solid #f3f3f3;
 }
 /*# sourceMappingURL=style.css.map */

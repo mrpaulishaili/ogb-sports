@@ -40,7 +40,7 @@
 
     <!-- HEADER -->
 
-    <header><%-include('components/default-header.ejs') %></header>
+    <header><%-include('../components/store-header.ejs') %></header>
 
     <!-- HEADER ends -->
 
@@ -48,7 +48,7 @@
 
     <!-- ASIDE  -->
 
-    <aside class="aside"><%-include('components/aside.ejs') %></aside>
+    <aside class="aside"><%-include('../components/aside.ejs') %></aside>
 
     <!-- ASIDE ends -->
 
@@ -59,35 +59,32 @@
     <main class="main">
       <!-- ** -->
 
-      <!-- HERO -->
-
-      <div class="hero">
-        <div class="slides">
-          <div
-            class="slide"
-            style="background-image: url(/images/complete-jersey.jpg)"
-          >
-            <div class="slide-text">
-              <h2>The Latest Jersey by Man United now in town</h2>
-              <a class="btn" href="/shop.html">Explore more</a>
+      <div class="product-checkout">
+        <div class="checkout-container">
+          <div class="checkout_product-image">
+            <img src="/images/complete-jersey.jpg" alt="" class="product-cart_image" />
+          </div>
+          <div class="checkout_product-cart product-cart">
+            <div class="product-cart_header">
+              <h1>Nike Air Max Light 2020</h1>
+              <p>Unbreakable Lightweight Explosiveness</p>
+            </div>
+            <div class="product-cart_cost">
+              <div class="">$1200</div>
+              <div class="select-qty"></div>
+            </div>
+            <div class="product-cart_excerpt">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident nisi aut atque molestiae quibusdam nobis?
+            </div>
+            <div class="produce-desc_action">
+              <button class="btn">ADD TO CART <i class="fa fa-cart"></i></button>
             </div>
           </div>
-          <div class="controls">
-            <div class="control"></div>
-            <div class="control active"></div>
-            <div class="control"></div>
-          </div>
         </div>
+        <!-- <div class="checkout-on-mobile"></div>
+        <div class="checkout-on-desktop"></div> -->
       </div>
-
-      <!-- HERO ends -->
-
-      <section class="section brands-you-trust">
-        <h2 class="section-title">Brands you Trust</h2>
-        <p class="">
-          We have made a collection of brand we know you love and trust
-        </p>
-      </section>
     </main>
 
     <!-- MAIN ends -->
@@ -96,7 +93,7 @@
 
     <!-- FOOTER -->
 
-    <footer id="reach-us"><%-include('components/footer.ejs') %></footer>
+    <footer id="reach-us"><%-include('../components/footer.ejs') %></footer>
 
     <!-- FOOTER ends-->
 
