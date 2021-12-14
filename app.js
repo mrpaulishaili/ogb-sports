@@ -33,10 +33,7 @@ const validRoutes = [
     name: "login",
     path: "/login",
   },
-  {
-    name: "pages/api-for-developers",
-    path: "/api-for-developers",
-  },
+
 ];
 
 /* Valid Routes are ones the requires Authentication before accessing */
